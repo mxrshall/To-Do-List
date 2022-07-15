@@ -11,7 +11,7 @@ function render(){
     for (i = 0; i < storage.length; i++)
     console.log(storage[i])
     
-    const list = document.createElement("li");
+    const list = document.createElement("div");
     list.innerHTML = uloha.value;
     document.body.appendChild(list);
     uloha.value = ""
