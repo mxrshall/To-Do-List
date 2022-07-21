@@ -12,6 +12,7 @@ function render(){
     console.log(storage[i])
     
     const list = document.createElement("div");
+    document.querySelector("div").style.display="block"
     list.innerHTML = uloha.value;
     document.body.appendChild(list);
     uloha.value = ""
