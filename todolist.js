@@ -1,5 +1,6 @@
 const uloha = document.getElementById("uloha")
 const pridat = document.getElementById("pridat")
+const zmazat = document.createElement("button");
 let storage = []
 
 pridat.addEventListener("click", function(){
@@ -12,8 +13,19 @@ function render(){
     console.log(storage[i])
     
     const list = document.createElement("div");
-    document.querySelector("div").style.display="block"
-    list.innerHTML = uloha.value;
+    const zmazat = document.createElement("button");
+    
     document.body.appendChild(list);
+    document.body.appendChild(zmazat);
+    zmazat.setAttribute("id","zmazat")
+    zmazat.textContent = "Zmazať"
+    
+    list.innerHTML = uloha.value;
     uloha.value = ""
+
+    zmazat.addEventListener("click", function(){
+        console.log("ahoj")
+    })
 }
+
+
