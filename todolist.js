@@ -24,7 +24,8 @@ function render(){
     uloha.value = ""
 
     zmazat.addEventListener("click", function(){
-        console.log("ahoj")
+        document.body.removeChild(list);
+        document.body.removeChild(zmazat);
     })
 }
 
